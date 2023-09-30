@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <div>
-        这是z9090的代码
-    </div>
-    <div>
-
-        这是主分支的代码
-    </div>
-
-    <div>
-        协作开发
-    </div>
-
-    <div>
-        999999999797897
-<!-- 
-        这是在z9090分支的代码
-        z9090 -->
-    </div>
 </body>
+
 </html>
+<script>
+    let arr = [{
+        first: "A"
+    }, {
+        first: "A"
+    }, {
+        first: "A"
+    }, {
+        first: "A"
+    }, {
+        first: "A"
+    }, {
+        first: "A"
+    }, {
+        first: "A"
+    }, {
+        first: "B"
+    }, {
+        first: "B"
+    }, {
+        first: "B"
+    }, {
+        first: "B"
+    }, {
+        first: "B"
+    }, {
+        first: "B"
+    }, {
+        first: "B"
+    }, {
+        first: "B"
+    }, {
+        first: "B"
+    }, {
+        first: "C"
+    }, {
+        first: "C"
+    }, {
+        first: "C"
+    }, {
+        first: "C"
+    }, {
+        first: "C"
+    }, {
+        first: "C"
+    }, {
+        first: "C"
+    }, {
+        first: "C"
+    }, {
+        first: "C"
+    }, {
+        first: "C"
+    }];
+    // 去重
+    // Array.prototype.flatarr = function(){
+    //    let arr = []
+    //    for (const v of this) {
+    //        !(arr.includes(v.first)) && arr.push(v.first);
+    //    };
+    //    return arr
+    // };
+
+    // {
+    //     "A":[1,123123],
+    //     "B":[]
+    // }
+
+    // arr:[
+    //     [{first:"A"},{first:"A"},{first:"A"}],
+    //     [{first:"B"},{first:"B"},{first:"B"}],
+    //     [{first:"C"},{first:"C"},{first:"C"}]
+    // ]
+
+    const groupedData = arr.reduce((result, item) => {
+        const category = item.first;
+        // 检查结果对象中是否已经存在以当前类别为键的数组
+        if (!result[category]) {
+            // 如果不存在，则初始化一个空数组作为该类别的值
+            result[category] = [];
+        }
+
+        // 将当前对象添加到对应类别的数组中
+        result[category].push(item);
+
+        return result;
+    }, {});
+    // let objtoarr = [];
+    // for (const key in groupedData) {
+    //     objtoarr.push(groupedData[key])
+    // }
+
+
+    console.log(groupedData);
+</script>
