@@ -1,0 +1,79 @@
+.ep-dialog__header {
+    background-color: #F5F7FB;
+    font-size: 24px;
+    color: #384951;
+    padding: 0px 24px;
+    height: 60px;
+    font-weight: bold;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.ep-input__wrapper,
+.ep-textarea__inner {
+    box-shadow: none;
+    height: 48px;
+    box-sizing: border-box;
+}
+
+.ep-table th.ep-table__cell,
+.ep-table__header .ep-table-fixed-column--right {
+    background-color: #F5F7FB !important;
+}
+
+.ep-input.is-disabled .ep-input__wrapper {
+    box-shadow: none;
+}
+
+.ep-select__wrapper.is-disabled {
+    box-shadow: none;
+}
+
+.ep-dialog__headerbtn {
+    top: 5px;
+}
+
+.ep-dialog__close {
+    font-weight: bold;
+    font-size: 25px !important;
+}
+
+.ep-form-item__label-wrap {
+    align-items: center;
+}
+
+.dialog-footer {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #EEEEEE;
+    ;
+}
+
+.ep-select__wrapper {
+    height: 48px;
+    background-color: #F5F7FB;
+    box-shadow: none;
+}
+
+.ep-button--large {
+    min-width: 101px;
+    min-height: 48px;
+}
+
+.ep-date-editor.ep-input,
+.ep-date-editor.ep-input__wrapper {
+    min-height: 48px;
+}
+
+.ep-pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.customPrefix .ep-input__prefix {
+    width: 28px !important;
+    margin-right: 0px;
+}

@@ -1,0 +1,124 @@
+.bg-fff {
+   background-color: #fff;
+}
+
+.border-none {
+   border: none;
+}
+
+.confirm-btn {
+   width: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 48px;
+   background: #24B287;
+   border-radius: 8px 8px 8px 8px;
+   line-height: 48px;
+   font-weight: 400;
+   font-size: 16px;
+   color: #FFFFFF;
+   padding: 0 34px;
+   cursor: pointer;
+   user-select: none;
+    box-shadow: none;
+   border: none;
+}
+.cancel-btn,.confirm-btn:hover {
+   opacity: .8;
+}
+
+.cancel-btn {
+   width: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 48px;
+   background: #929FAF;
+   border-radius: 8px 8px 8px 8px;
+   line-height: 48px;
+   font-weight: 400;
+   font-size: 16px;
+   padding: 0 34px;
+   color: #FFFFFF;
+   cursor: pointer;
+   box-shadow: none;
+   border: none;
+   user-select: none;
+}
+
+.dialog-footer{
+   display: flex;
+   justify-content: center;
+   gap: 12px;
+}
+
+/* 滚动条整体宽度 */
+::-webkit-scrollbar {
+  width: 4px; /* 可根据需要调整宽度 */
+  background: #e6f0ff;
+  margin-left: 10px;
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+  background: #e6f0ff;
+  border-radius: 8px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  background: #24B287;
+  border-radius: 4px;
+  min-height: 70px;
+  transition: background 0.2s;
+}
+
+/* 鼠标悬停时滑块颜色 */
+::-webkit-scrollbar-thumb:hover {
+  background: #24B287;
+}
+
+.nav_btn_reset:hover {
+  background-color: #929faf;
+  opacity: 0.8;
+}
+
+.nav_btn_reset {
+  width: 101px;
+  height: 48px;
+  background: #929faf;
+  border-radius: 8px 8px 8px 8px;
+  color: #ffffff;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 48px;
+  user-select: none;
+  box-shadow: none;
+  border: none;
+}
+
+.nav_btn_confirm {
+  width: 101px;
+  height: 48px;
+  background: #24B287;
+  border-radius: 8px 8px 8px 8px;
+  color: #ffffff;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 48px;
+  user-select: none;
+  box-shadow: none;
+  border: none;
+}
+.nav_btn_confirm:hover {
+  background-color: #24B287;
+  opacity: 0.8;
+}
+.text-right{
+  text-align: right;
+  font-size: 16px;
+  color:#000000;
+}

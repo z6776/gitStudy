@@ -1,0 +1,58 @@
+$--colors: (
+  'primary': (
+    'base': #24B287,
+  ),
+  'success': (
+    'base': #21ba45,
+  ),
+  'warning': (
+    'base': #f2711c,
+  ),
+  'danger': (
+    'base': #F04A4B,
+  ),
+  'error': (
+    'base': #F04A4B,
+  ),
+  'info': (
+    'base': #929FAF,
+  ),
+);
+
+$--dialog: (
+  'width': 500px,
+  'padding-primary': 0px,
+  'background-color': #fff,
+  'border-radius': 8px  8px  8px  8px
+);
+$--input:(
+  "bg-color":"#F5F7FB",
+  "box-shadow":"none"
+);
+
+// we can add this to custom namespace, default is 'el'
+@forward 'element-plus/theme-chalk/src/mixins/config.scss' with (
+  $namespace: 'ep'
+);
+
+// You should use them in scss, because we calculate it by sass.
+// comment next lines to use default color
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  // do not use same name, it will override.
+  $colors: $--colors,
+  $dialog:$--dialog,
+  $input:$--input,
+  $button-padding-horizontal: ('default': 50px)
+);
+
+// @forward 'element-plus/theme-chalk/src/dialog.scss' with (
+ 
+// );
+
+// if you want to import all
+// @use "element-plus/theme-chalk/src/index.scss" as *;
+
+// You can comment it to hide debug info.
+// @debug $--colors;
+
+// custom dark variables

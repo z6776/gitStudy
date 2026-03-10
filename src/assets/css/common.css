@@ -1,0 +1,96 @@
+.search_box{
+    height: 80px;
+    box-shadow: 0px 8px 24px 0px rgba(146,159,175,0.16);
+    border-radius: 12px 12px 12px 12px;
+    border: 1px solid #EEEEEE;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+}
+.search_label{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    font-weight: normal;
+    font-size: 16px;
+    color: #636676;
+}
+.btn_icon{
+    width: 28px;
+    height: 28px;
+}
+.form_box {
+    padding: 24px 0 10px;
+    margin: 0 auto;
+    width: 60%;
+}
+/* 首页图标 */
+.semi-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 0 200px 0 0;
+    background-color: #24B287;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+/* 通用滚动条 */
+.wbkitscroll{
+      /* 滚动条整体宽度 */
+  ::-webkit-scrollbar {
+    width: 4px; /* 可根据需要调整宽度 */
+    background: #e6f0ff;
+    margin-left: 10px;
+  }
+
+  /* 滚动条轨道 */
+  ::-webkit-scrollbar-track {
+    background: #e6f0ff;
+    border-radius: 8px;
+  }
+
+  /* 滚动条滑块 */
+  ::-webkit-scrollbar-thumb {
+    background: #24B287;
+    border-radius: 4px;
+    min-height: 70px;
+    transition: background 0.2s;
+  }
+
+  /* 鼠标悬停时滑块颜色 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #24B287;
+  }
+
+  /* 横向滚动条（如有） */
+  ::-webkit-scrollbar-horizontal {
+    height: 12px;
+  }
+}
+.ep-table{
+    box-shadow: 0 8px 24px 0 rgba(146, 159, 175, 0.16);
+    border-radius: 12px;
+}
+.ep-table__inner-wrapper{
+     box-shadow: 0 8px 24px 0 rgba(146, 159, 175, 0.16);
+    border-radius: 12px;
+}
+.tableshadow{
+    box-shadow: 0 8px 24px 0 rgba(146, 159, 175, 0.16);
+    border-radius: 12px;
+}
+.ep-table__header{
+  min-height: 32px;
+}
+.ep-table__header .ep-table__cell .cell{
+    color:#384951;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 800;
+}
+
+
+
